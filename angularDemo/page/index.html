@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en" ng-app="myApp1">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/common/angular.min.js"></script>
+	<script>
+	var m1=angular.module('myApp1',[]);
+
+	m1.controller('header',['$scope',function($scope){
+	}]);
+	</script>
+</head>
+<body>
+	<header ng-controller="header" ng-include="'header.html'"></header>
+	<div ng-controller="header">
+		<input type="text" ng-model="text" ng-model-options="{updateOn:'blur'}">
+			<div>{{text}}</div>
+		</div>
+	<footer ng-controller="header" ng-include="'footer.html'"></footer>
+</body>
+</html>
