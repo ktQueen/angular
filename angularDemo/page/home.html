@@ -1,0 +1,8 @@
+<link rel="stylesheet" href="../dest/css/home.min.css"/>
+<script src="../dest/js/home.min.js"></script>
+<div class="home">
+    <ul class="tab">
+        <li ui-sref="{{data.url}}" ui-sref-active="active" ng-repeat="data in tab">{{data.title}}</li>
+    </ul>
+    <div ui-view=""></div>
+</div>

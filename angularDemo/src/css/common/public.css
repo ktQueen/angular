@@ -1,13 +1,41 @@
-
-/*清除浮动*/
-.left{float: left;  }  
-.right{  float: right;  }  
-.clearfix:after{content:'\0020';display:block;height:0;clear:both}
-.clearfix{*zoom:1}
-/*显示与隐藏*/
-.hide{display: none;}
-.show{display: block;}
-/*文本*/
-.textLeft{text-align: left;}
-.textCenter{text-align: center;}
-.textRight{text-align: right;}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clearfix {
+  display: block;
+  zoom: 1;
+}
+.clearfix:after {
+  content: '\0020';
+  display: block;
+  height: 0;
+  clear: both;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.text-justify {
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+.visible {
+  visibility: visible;
+}
+.hidden {
+  visibility: hidden;
+}

@@ -1,0 +1,28 @@
+//引入公共样式参数
+@import url( "./common-parameter" );
+//引入公共样式函数
+@import url( "./common-function" );
+.header{
+  position: relative;
+  width:100%;
+  height: 40/@r;
+  background:@main-color-yellow ;
+  .user,.phone{
+    position: absolute;
+    top: 8/@r;
+    img{
+      width: 25/@r;
+    }
+  }
+  .user{
+    left: 10/@r;
+  }
+  .phone{
+    right:10/@r;
+  }
+  .title{
+    text-align: center;
+    color: @font-color-white;
+    line-height: 40/@r;
+  }
+}

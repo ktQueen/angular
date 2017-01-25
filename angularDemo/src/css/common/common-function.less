@@ -1,0 +1,51 @@
+//盒子在主轴上的对齐方式--两端对齐，项目之间的间隔都相等
+.box-justify(){
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: space-between;
+}
+//盒子在主轴上的对齐方式--每个项目两侧的间隔相等
+.box-center(){
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: space-around;
+}
+//块级元素同行样式，兼容IE7
+.inline-block(){
+  display: inline-block;
+  //  *display: inline;
+  //  *zoom: 1;
+}
+
+//设置高度和行高 @value为传入参数：例如要设置50px的高度，并垂直居中，则应在调用处使用 .height-middle( 50px );
+.height-middle( @value ){
+  height: @value;
+  line-height: @value;
+}
+//一行文本超出显示省略号，多行文本超出用JS
+.text-overflow(@width){
+  width: @width;
+  white-space:nowrap;//文本不换行
+  overflow: hidden;
+  text-overflow:ellipsis;
+}
+//自动换行
+.auto-change-line(){
+  white-space: normal;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+//强制不换行
+.no-change-line(){
+  white-space: nowrap;
+  word-wrap: normal;
+  word-break: normal;
+}
+
+//元素透明 @value为传入参数：例如要设置50%的透明度，则应在调用处使用 .opacity( 50 );
+.opacity( @value ){
+  opacity: @value / 100;
+  filter: alpha( opacity=@value );
+}

@@ -12,5 +12,9 @@
 
     "browser":true,
     "devel":true,
-    "node":true
+    "node":true,
+    "globals": {
+        "$": false,
+        "jQuery": false
+     }
 }

@@ -1,22 +1,26 @@
 <!doctype html>
-<html lang="en" ng-app="myApp1">
+<html ng-app="uiRouterKitty">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<script src="js/common/angular.min.js"></script>
-	<script>
-	var m1=angular.module('myApp1',[]);
-
-	m1.controller('header',['$scope',function($scope){
-	}]);
-	</script>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>index</title>
+    <link rel="stylesheet" href="../src/css/common/reset.css"/>
+    <link rel="stylesheet" href="../src/css/common/public.css"/>
+    <script src="../src/js/common/jquery-1.11.1.js"></script>
+    <script src="../src/js/common/angular.min.js"></script>
+    <script src="../src/js/common/angular-ui-router.min.js"></script>
+    <script src="../src/js/common/router-ui.js"></script>
+    <script src="../src/js/common/public.js"></script>
 </head>
 <body>
-	<header ng-controller="header" ng-include="'header.html'"></header>
-	<div ng-controller="header">
-		<input type="text" ng-model="text" ng-model-options="{updateOn:'blur'}">
-			<div>{{text}}</div>
-		</div>
-	<footer ng-controller="header" ng-include="'footer.html'"></footer>
+<div>
+    <header ng-include="'common/header.html'"></header>
+    <div ui-view></div>
+    <footer ng-include="'common/footer.html'"></footer>
+</div>
 </body>
 </html>

@@ -1,0 +1,48 @@
+//引入公共样式参数
+@import url( "./common-parameter" );
+//引入公共样式函数
+@import url( "./common-function" );
+//浮动与清浮动
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.clearfix {
+  display: block;
+  zoom: 1;
+  &:after {
+    content:'\0020';
+    display:block;
+    height:0;
+    clear: both;
+  }
+}
+//文本对齐方式
+.text-left{
+  text-align: left;
+}
+.text-right{
+  text-align: right;
+}
+.text-center{
+  text-align: center;
+}
+.text-justify{
+  text-align:justify;
+  text-justify:inter-ideograph;
+}
+//显示与隐藏
+.show{
+  display: block;
+}
+.hide{
+  display: none;
+}
+.visible{
+  visibility: visible;
+}
+.hidden{
+  visibility: hidden;
+}
