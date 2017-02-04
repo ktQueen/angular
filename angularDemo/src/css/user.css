@@ -1,0 +1,136 @@
+.user .info {
+  height: 7.8rem;
+  padding: 1.1rem 0.5rem;
+  text-align: center;
+  background: #eee;
+}
+.user .info .pic {
+  width: 50%;
+  float: left;
+}
+.user .info .pic span {
+  position: relative;
+  display: inline-block;
+  width: 4.1rem;
+  height: 4.1rem;
+  border: 1px solid #1fd1c2;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.user .info .pic span img {
+  width: 80%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -40%;
+}
+.user .info .pic p {
+  font-size: 0.6rem;
+  line-height: 1rem;
+  color: #939393;
+}
+.user .info .money {
+  width: 50%;
+  float: left;
+}
+.user .info .money .num {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #fcb333;
+}
+.user .info .money .txt {
+  font-size: 0.6rem;
+  color: #939393;
+}
+.user .pack {
+  height: 7.9rem;
+  padding: 1rem 1.3rem;
+}
+.user .pack .icon {
+  height: 0.5rem;
+  text-align: right;
+}
+.user .pack .icon img {
+  height: 0.5rem;
+}
+.user .pack .txt {
+  font-size: 0.6rem;
+  line-height: 2.4rem;
+  color: #939393;
+}
+.user .pack .num {
+  font-size: 2rem;
+  line-height: 2rem;
+  color: #fcb333;
+}
+.user .master {
+  padding: 0.3rem 0.8rem 0.6rem 1rem;
+  background: #eee;
+}
+.user .master .title {
+  font-size: 0.6rem;
+  line-height: 1.6rem;
+  color: #939393;
+}
+.user .master .rate1 .bar-inter {
+  width: 30%;
+}
+.user .master .rate2 .bar-inter {
+  width: 50%;
+}
+.user .master .bar {
+  width: 70%;
+  float: left;
+}
+.user .master .bar .bar-outer {
+  height: 0.55rem;
+  padding: 1px 2px;
+  border: 1px solid #1fd1c2;
+}
+.user .master .bar .bar-inter {
+  height: 0.35rem;
+  background: #1fd1c2;
+}
+.user .master .bar .bar-txt {
+  font-size: 0.6rem;
+  line-height: 1.1rem;
+  color: #939393;
+  display: flex;
+  justify-content: space-between;
+}
+.user .master .btn {
+  width: 30%;
+  float: left;
+  padding-left: 8%;
+}
+.user .master .btn button {
+  width: 100%;
+  height: 1.2rem;
+  font-size: 0.6rem;
+  background: #1fd1c2;
+  color: #fff;
+  border: none;
+}
+body {
+  padding-bottom: 2rem;
+}
+.fix-btn {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #fcb333;
+  border-top: 1px solid #fcb333;
+}
+.fix-btn button {
+  width: 50%;
+  height: 2rem;
+  float: left;
+  line-height: 2rem;
+  text-align: center;
+  border: none;
+  background: #fff;
+}
+.fix-btn button:nth-of-type(1) {
+  border-right: 1px solid #fcb333;
+}

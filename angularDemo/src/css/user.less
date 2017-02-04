@@ -1,0 +1,147 @@
+//引入公共样式参数
+@import url( "./common/common-parameter" );
+//引入公共样式函数
+@import url( "./common/common-function" );
+
+.user{
+  .info{
+    height: 156/@r;
+    padding: 22/@r 10/@r;
+    text-align: center;
+    background: @bg-color-gray;
+    .pic{
+      width: 50%;
+      float: left;
+      span{
+        position: relative;
+        display: inline-block;
+        width: 82/@r;
+        height: 82/@r;
+        border: 1px solid @main-color-cyan;
+        border-radius: 50%;
+        overflow: hidden;
+        img{
+          width: 80%;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          margin-left: -40%;
+        }
+      }
+      p{
+        font-size: 12/@r;
+        line-height: 20/@r;
+        color: @font-color-gray;
+      }
+    }
+    .money{
+      width: 50%;
+      float: left;
+      .num{
+        font-size: 28/@r;
+        line-height: 40/@r;
+        color: @main-color-yellow
+      }
+      .txt{
+        font-size: 12/@r;
+        color: @font-color-gray;
+      }
+    }
+  }
+  .pack{
+    height: 158/@r;
+    padding: 20/@r 26/@r;
+    .icon{
+      height: 10/@r;
+      text-align: right;
+      img{
+        height: 10/@r;
+      }
+    }
+    .txt{
+      font-size: 12/@r;
+      line-height: 48/@r;
+      color: @font-color-gray;
+    }
+    .num{
+      font-size: 40/@r;
+      line-height: 40/@r;
+      color: @main-color-yellow;
+    }
+  }
+  .master{
+    padding:6/@r 16/@r 12/@r 20/@r;
+    background: @bg-color-gray;
+    .title{
+      font-size: 12/@r;
+      line-height: 32/@r;
+      color: @font-color-gray;
+    }
+    .rate1{
+      .bar-inter {
+        width: 30%;
+      }
+    }
+    .rate2{
+      .bar-inter {
+        width: 50%;
+      }
+    }
+    .bar{
+      width: 70%;
+      float: left;
+      .bar-outer{
+        height: 11/@r;
+        padding: 1px 2px;
+        border: 1px solid @main-color-cyan;
+      }
+      .bar-inter{
+        height: 7/@r;
+        background: @main-color-cyan;
+      }
+      .bar-txt{
+        font-size: 12/@r;
+        line-height: 22/@r;
+        color: @font-color-gray;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .btn{
+      width: 30%;
+      float: left;
+      padding-left: 8%;
+      button{
+        width: 100%;
+        height: 24/@r;
+        font-size: 12/@r;
+        background: @main-color-cyan;
+        color: @font-color-white;
+        border: none;
+      }
+    }
+  }
+}
+body{
+  padding-bottom: 40/@r;
+}
+.fix-btn{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: @main-color-yellow;
+  border-top: 1px solid @main-color-yellow;
+  button{
+    width: 50%;
+    height: 40/@r;
+    float: left;
+    line-height: 40/@r;
+    text-align: center;
+    border: none;
+    background: #fff;
+  }
+  button:nth-of-type(1){
+    border-right: 1px solid @main-color-yellow;
+  }
+}

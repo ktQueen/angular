@@ -1,4 +1,22 @@
 
-    <div class="chart">
-        season
+<div class="chart">
+    <div class="circle">
+        <?xml version="1.0" encoding="utf-8"?>
+        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+        <svg width="220" height="220" >
+            <circle cx="110" cy="110" r="100" stroke-width="8" stroke="#D1D3D7" fill="none"></circle>
+            <circle cx="110" cy="110" r="100" stroke-width="8" stroke="#1fd1c2" fill="none" transform="matrix(0,1,-1,0,220,0)" stroke-dasharray="0 1069"></circle>
+            <circle class="circle-right" cx="110" cy="110" r="100" stroke-width="8" stroke="#1fd1c2" fill="none" stroke-dasharray="0 1069"></circle>
+        </svg>
     </div>
+    <div class="box">
+        <div class="title">季计划 | 3个月</div>
+        <div class="rate" data-ng-init="load(2)">{{num.season}} <span>%</span></div>
+        <div class="txt">年利率</div>
+        <div class="view" ui-sref="home-season-detail">查看详情&gt;&gt;</div>
+    </div>
+</div>
+<div class="clearfix rate-money">
+    <div class="left">主人特权加息<span>{{rate.season}}%</span></div>
+    <div class="right">可投  <span>{{canMoney.season}}元</span></div>
+</div>

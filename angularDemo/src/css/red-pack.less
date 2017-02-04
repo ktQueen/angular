@@ -1,0 +1,54 @@
+//引入公共样式参数
+@import url( "./common/common-parameter" );
+//引入公共样式函数
+@import url( "./common/common-function" );
+
+.red-pack{
+  .packet{
+    height: 202/@r;
+    padding: 30/@r 25/@r;
+    background: @bg-color-gray;
+    .txt{
+      color: @font-color-gray;
+      font-size: 12/@r;
+      line-height: 30/@r;
+    }
+    .money{
+      font-size: 50/@r;
+      color: @main-color-yellow;
+      text-align: center;
+      line-height: 110/@r;
+    }
+  }
+  .list{
+    padding: 8/@r;
+    color: @font-color-gray;
+    ul{
+      margin-top: 30/@r;
+    }
+    li{
+      width: 100%;
+      margin-top: 10/@r;
+    }
+    .money{
+      width: 30%;
+      float: left;
+      font-size: 22/@r;
+      line-height: 65/@r;
+      text-align: center;
+      border: 1px solid @font-color-light-gray;
+    }
+    .txt{
+      width: 70%;
+      text-indent: 10%;
+      float: left;
+      margin-left: -1px;
+      font-size: 14/@r;
+      line-height: 32/@r;
+      border: 1px solid @font-color-light-gray;
+      .time{
+        border-top: 1px solid @font-color-light-gray;
+      }
+    }
+  }
+}

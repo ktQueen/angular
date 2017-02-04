@@ -1,0 +1,47 @@
+.red-pack .packet {
+  height: 10.1rem;
+  padding: 1.5rem 1.25rem;
+  background: #eee;
+}
+.red-pack .packet .txt {
+  color: #939393;
+  font-size: 0.6rem;
+  line-height: 1.5rem;
+}
+.red-pack .packet .money {
+  font-size: 2.5rem;
+  color: #fcb333;
+  text-align: center;
+  line-height: 5.5rem;
+}
+.red-pack .list {
+  padding: 0.4rem;
+  color: #939393;
+}
+.red-pack .list ul {
+  margin-top: 1.5rem;
+}
+.red-pack .list li {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+.red-pack .list .money {
+  width: 30%;
+  float: left;
+  font-size: 1.1rem;
+  line-height: 3.25rem;
+  text-align: center;
+  border: 1px solid #cdcdcd;
+}
+.red-pack .list .txt {
+  width: 70%;
+  text-indent: 10%;
+  float: left;
+  margin-left: -1px;
+  font-size: 0.7rem;
+  line-height: 1.6rem;
+  border: 1px solid #cdcdcd;
+}
+.red-pack .list .txt .time {
+  border-top: 1px solid #cdcdcd;
+}

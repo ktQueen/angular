@@ -19,6 +19,13 @@
 .header .phone {
   right: 0.5rem;
 }
+.header .back {
+  position: absolute;
+  top: 0.15rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
 .header .title {
   text-align: center;
   color: #fff;

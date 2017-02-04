@@ -2,6 +2,7 @@
 @import url( "./common/common-parameter" );
 //引入公共样式函数
 @import url( "./common/common-function" );
+
 .home{
   padding: 27/@r 10/@r;
   .tab{
@@ -12,7 +13,7 @@
     li{
       width: 25%;
       float: left;
-      .height-middle(40/@r);
+      .height-middle(41/@r);
       text-align: center;
       color: @main-color-cyan;
       border-right: 1px solid @main-color-cyan;
@@ -26,7 +27,143 @@
     }
   }
   .chart{
+    position: relative;
     padding: 50/@r 40/@r;
-
+    .circle{
+      text-align: center;
+    }
+    .circle-right{
+      -moz-transform:scaleY(-1) rotate(-90deg);
+      -webkit-transform:scaleY(-1) rotate(-90deg);
+      -o-transform:scaleY(-1) rotate(-90deg);
+      transform:scaleY(-1) rotate(-90deg);
+      /*IE*/
+      filter:FlipV;
+    }
+    .box{
+      width: 196px;
+      height: 196px;
+      position: absolute;
+      top: 60/@r;
+      left: 50%;
+      margin-left: -98px;
+      text-align: center;
+      border-radius: 50%;
+      overflow: hidden;
+      .title{
+        padding-top: 16px;
+        font-size: 14/@r;
+        color: @font-color-gray;
+        line-height: 34px;
+      }
+      .rate{
+        position: relative;
+        color: @main-color-yellow;
+        font-size: 60px;
+        line-height: 82px;
+        span{
+          position: absolute;
+          font-size: 26px;
+          line-height: 30px;
+          bottom: 11px;
+        }
+      }
+      .txt{
+        font-size: 14/@r;
+        line-height: 20px;
+        color: @font-color-gray;
+      }
+      .view{
+        margin-top: 8px;
+        font-size: 14/@r;
+        line-height: 32px;
+        color: @font-color-light-gray;
+        border-top: 1px solid @font-color-light-gray;
+      }
+    }
+  }
+  .rate-money{
+    padding: 0 30/@r;
+    font-size: 14/@r;
+    color: @font-color-gray;
+    span{
+      color: @main-color-yellow;
+    }
+  }
+  .detail{
+    .rate{
+      padding: 22/@r 14/@r;
+      .title{
+        font-size: 12/@r;
+        color: @font-color-gray;
+      }
+      .num{
+        position: relative;
+        font-size: 60/@r;
+        line-height: 80/@r;
+        color: @main-color-yellow;
+        text-align: center;
+        span{
+          position: absolute;
+          bottom: -10/@r;
+          left: 50%;
+          margin-left: 30/@r;
+          font-size: 26/@r;
+        }
+      }
+      .txt{
+        padding-top: 10/@r;
+        font-size: 12/@r;
+        color: @font-color-gray;
+        .txt-left{
+          width: 50%;
+          float: left;
+          text-align: left;
+        }
+        .txt-right{
+          width: 50%;
+          float: left;
+          text-align: right;
+        }
+        span{
+          color: @main-color-yellow;
+        }
+      }
+    }
+    .list{
+      ul{}
+      li{
+        width: 100%;
+        height: 34/@r;
+        padding: 0 10/@r;
+        margin-bottom: 1px;
+        font-size: 14/@r;
+        line-height: 34/@r;
+        background: @bg-color-gray;
+      }
+      .txt-left{
+        width: 50%;
+        float: left;
+        text-align: left;
+        color: @font-color-gray;
+      }
+      .txt-right{
+        width: 50%;
+        float: left;
+        text-align: right;
+        color: @font-color-light-gray2;
+      }
+    }
+  }
+  .btn{
+    padding: 35/@r 25/@r 0;
+    button{
+      width: 100%;
+      height: 42/@r;
+      background: @main-color-cyan;
+      color: @font-color-white;
+      border: none;
+      border-radius: 5px;
+    }
   }
 }

@@ -1,8 +1,20 @@
 <link rel="stylesheet" href="../dest/css/home.min.css"/>
 <script src="../dest/js/home.min.js"></script>
+<div class="header">
+    <div class="user" ui-sref="user">
+        <img src="../img/header/user.png" alt=""/>
+    </div>
+    <div class="title">{{title}}</div>
+    <div class="phone">
+        <a href="tel:13988888888"><img src="../img/header/phone.png" alt=""/></a>
+    </div>
+</div>
 <div class="home">
     <ul class="tab">
         <li ui-sref="{{data.url}}" ui-sref-active="active" ng-repeat="data in tab">{{data.title}}</li>
     </ul>
     <div ui-view=""></div>
+    <div class="btn">
+        <button  ui-sref="invest">立即投资</button>
+    </div>
 </div>

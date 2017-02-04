@@ -1,5 +1,55 @@
-<link rel="stylesheet" href="../dest/css/index.min.css"/>
-<script src="../dest/js/index.min.js"></script>
-<div>
-    user123
+<link rel="stylesheet" href="../dest/css/user.min.css"/>
+<script src="../dest/js/user.min.js"></script>
+<header ng-include="'common/header.html'"></header>
+<div class="user">
+    <div class="info clearfix">
+        <div class="pic">
+            <span><img src="../img/user/user-pic.png" alt=""/></span>
+            <p>{{phone}}</p>
+        </div>
+        <div class="money">
+            <p class="num">{{allMoney}}</p>
+            <p class="txt">总资产（元）</p>
+            <p class="num">{{remainMoney}}</p>
+            <p class="txt">可用余额（元）</p>
+        </div>
+    </div>
+
+    <div class="pack">
+        <p class="icon"><img src="../img/user/icon-pack.png" alt=""  ui-sref="red-pack"/></p>
+        <p class="txt">主人红包</p>
+        <p class="num">6,000.00</p>
+    </div>
+
+    <div class="master">
+        <div class="rate1">
+            <p class="title">主人特权加息</p>
+            <div class="clearfix">
+                <div class="bar">
+                    <div class="bar-outer">
+                        <div class="bar-inter"></div>
+                    </div>
+                    <p class="bar-txt"><span>0</span><span>0.5</span><span>1</span><span>1.5</span><span>2</span></p>
+                </div>
+                <div class="btn"><button>加息</button></div>
+            </div>
+        </div>
+        <div class="rate2">
+            <p class="title">主人特权小金库</p>
+            <div class="clearfix">
+                <div class="bar">
+                    <div class="bar-outer">
+                        <div class="bar-inter"></div>
+                    </div>
+                    <p class="bar-txt"><span>0</span><span>0.5</span><span>1</span><span>1.5</span><span>2</span></p>
+                </div>
+                <div class="btn"><button>加钱</button></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fix-btn">
+        <button  ui-sref="invest">投资</button>
+        <button>充值</button>
+    </div>
 </div>
